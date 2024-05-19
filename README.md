@@ -28,7 +28,7 @@ A website that generates passwords
 
 <h2>Acknowledgements</h2>
 <ul>
-  <li>Carol Bolt's "The Book of Answers"</a></li>
+  <li>Scrimba: <a href="https://scrimba.com">Scrimba</a></li>
 </ul>
 
 <h2>Author</h2>
