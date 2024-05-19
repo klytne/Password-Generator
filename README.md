@@ -1,6 +1,6 @@
 # Password Generator- Solo Project
 
-A website that generators passwords
+A website that generates passwords
 
 <h2>Overview</h2>
 <h3>Screenshot</h3>
