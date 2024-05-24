@@ -45,3 +45,7 @@ button {
 
     padding: 0.5em;
 }
+
+.passwords {
+    border-top: 1px solid grey;
+}
