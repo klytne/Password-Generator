@@ -4,3 +4,10 @@
     --sub-color: #3a015c;
 }
 
+body {
+    color: white;
+    background-color: var(--back-color);
+
+    height: 100%;
+    transition: all 1s;
+}
