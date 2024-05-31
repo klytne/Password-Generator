@@ -2,6 +2,7 @@
     --back-color: #11001c;
     --main-color: #35012c;
     --sub-color: #3a015c;
+    --color: #4f0147;
 }
 
 body {
@@ -17,11 +18,12 @@ body {
 }
 
 .container {
-    border: 2px solid white;
+    border: 2px solid rgba(219, 216, 216, 0.5);
 
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+
     padding: 2em;
 }
 
@@ -46,6 +48,35 @@ button {
     padding: 0.5em;
 }
 
+button, input {
+    margin-bottom: 20px;
+}
+
 .passwords {
-    border-top: 1px solid grey;
+    width: 100%;
+    padding: 0;
+
+    display: table-cell;
+}
+
+ul {
+    columns: 2 100px;
+    padding: 10px;
+    margin: 0;
+
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    width: 200px;
+    height: 25px;
+
+    display: inline-block;
+    margin: 10px;
+    padding: 0.5em;
+
+    color: black;
+    background-color: var(--color);
+    border-radius: 5px;
 }
