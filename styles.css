@@ -53,17 +53,18 @@ button, input {
 }
 
 .passwords {
-    width: 100%;
-    padding: 0;
-
-    display: table-cell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
-    columns: 2 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
     padding: 10px;
     margin: 0;
-
     list-style: none;
 }
 
