@@ -1,26 +1,3 @@
-/*document.addEventListener("DOMContentLoader", function() {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@$%^&*+#'
-    
-    const length = document.querySelector("#input").value
-    const btnEl = document.querySelector("#btn")
-
-    let password = ""
-
-    if(btnEl != null) {
-        btnEl.addEventListener("click", function() {
-            for(let i = 0; i < length; i++) {
-                let ranNum = Math.floor(Math.random() * chars.length)
-                password += chars[ranNum]
-            }
-        })
-    } else {
-        console.error("And then!")
-    }
-
-    let c = document.querySelector(".pass1")
-    c.textContent = password
-})*/
-
 function genePass(len) {
     let password = ""
 
@@ -30,26 +7,27 @@ function genePass(len) {
             let ranNum = Math.floor(Math.random() * chars.length)
             password += chars[ranNum]
         }
-    
-        //document.querySelector(".pass1").textContent = password
 
     return password
 }
 
 document.addEventListener('click', function() {
     document.querySelector("#btn").addEventListener('click', function() {
-        //let length = 0
-        //console.log(length)
-
         let length = document.querySelector("#input").value
-        //console.log(length)
 
-        let pass2 = genePass(length)
+        if(length > 0 && length <= 10) {
+            document.querySelector("#error").textContent = ""
+            document.querySelector(".pass1").innerHTML = genePass(length)
+            document.querySelector(".pass2").innerHTML = genePass(length)
+            document.querySelector(".pass3").innerHTML = genePass(length)
+            document.querySelector(".pass4").innerHTML = genePass(length)
+        } else {
+            document.querySelector("#error").textContent = "Enter a value between 0 and 10"
+        }
+        
 
-        document.querySelector("#pass2").textContext = pass2
 
         length = 0
-        //console.log(length)
     })
 
 })
