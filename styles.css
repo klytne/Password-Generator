@@ -1,8 +1,7 @@
 :root {
-    --back-color: #11001c;
-    --main-color: #35012c;
-    --sub-color: #3a015c;
-    --color: #4f0147;
+    --back-color: #1e3932;
+    --main-color: #006241;
+    --sub-color: #d4e9e2;
 }
 
 body {
@@ -20,12 +19,16 @@ body {
 
 }
 
+h1 {
+    font-size: 28px;
+}
+
 .container {
     border: none;
-    border-radius: 30px;
-    box-shadow: 10px 10px 10px black;
+    border-radius: 15px;
+    box-shadow: 5px 6px 10px black;
 
-    background-color: #73605B;
+    background-color: var(--back-color);
 
     width: 600px;
     padding: 2em;
@@ -33,7 +36,7 @@ body {
 
 input {
     border: none;
-    border-radius: 0.8em;
+    border-radius: 0.4em;
     height: 25px;
 
     padding: 0.3em;
@@ -42,18 +45,18 @@ input {
 
 button {
     color: white;
-    background-color: #330000;
+    background-color: var(--main-color);
     font-weight: bold;
 
     border: none;
-    border-radius: 0.5em;
+    border-radius: 0.4em;
     height: 35px;
 
     padding: 0.5em;
 }
 
 button, input {
-    margin-bottom: 20px;
+    margin-top: 1em;
 }
 
 .passwords {
@@ -82,6 +85,6 @@ li {
     padding: 0.5em;
 
     color: black;
-    background-color: #D09683;
+    background-color: var(--sub-color);
     border-radius: 5px;
 }
