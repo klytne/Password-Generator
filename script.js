@@ -22,7 +22,10 @@ document.addEventListener('click', function() {
             document.querySelector(".pass3").innerHTML = genePass(length)
             document.querySelector(".pass4").innerHTML = genePass(length)
         } else {
-            document.querySelector("#error").textContent = "Enter a value between 0 and 10"
+            let errorEl = document.querySelector("#error")
+
+            errorEl.textContent = "Enter a value between 0 and 10"
+            errorEl.style.color = "black"
         }
         
 
