@@ -6,11 +6,11 @@ A website that generates passwords
 <h3>Screenshot</h3>
 <h4>Desktop</h4>
 
-<img src="#"><p>(Comming Soon)</p>
+<img src="desktop.png">
 
 <h2>Links</h2>
 <ul>
-  <li><a href="#">Live</a></li>
+  <li><a href="https://klypassword-generator.netlify.app/">Live</a></li>
 </ul>
 
 <h2>My Process</h2>
@@ -23,7 +23,10 @@ A website that generates passwords
 
 <h3>What I learnt</h3>
 <ul>
-  <li>(Will see at the end of the project...)</li>
+  <li>Error Handling</li>
+  <li>CSS Grid Templates</li>
+  <li>Event Listner</li>
+  <li>JavaScript HTML styling</li>
 </ul>
 
 <h2>Acknowledgements</h2>
